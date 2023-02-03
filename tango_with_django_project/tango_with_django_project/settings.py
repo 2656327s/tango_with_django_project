@@ -55,9 +55,6 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'tango_with_django_project.urls'
 
 
-STATICFILES_DIRS = [STATIC_DIR, ]
-MEDIA_ROOT = MEDIA_DIR
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -128,5 +125,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 LOGIN_URL = 'rango:login'
+
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [STATIC_DIR, ]
+
+MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
